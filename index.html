@@ -1,0 +1,2256 @@
+<!DOCTYPE html><html lang="ru-RU"><head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<style>@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:16px;-webkit-tap-highlight-color:rgba(0,0,0,0)} body{    font-family: 'Open Sans', sans-serif;font-size:16px;line-height:1.42857143;color:#504f52;background-color:#fff7eb}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#333;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1170px){.container{width:1170px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}} </style>
+
+<title>valenciya — Виробництво керамічних обігрівачів</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//netdna.bootstrapcdn.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="valenciya » Лента" href="https://www.valenciya.com.ua/feed/">
+<link rel="alternate" type="application/rss+xml" title="valenciya » Лента комментариев" href="https://www.valenciya.com.ua/comments/feed/">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.valenciya.com.ua\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="js/wp-emoji-release.min.js" type="text/javascript" defer></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="css/style.min.css" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('index_1.html#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('index_1.html#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('index_1.html#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('index_1.html#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('index_1.html#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('index_1.html#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('index_1.html#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('index_1.html#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="system-climate-style-css" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="system-climate-font-awesome-css" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="system-climate-owl-carousel-css" href="css/owl.carousel.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="system-climate-owl-theme-default-css" href="css/owl.theme.default.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="system-climate-fancybox-css" href="css/jquery.fancybox.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="system-climate-main-css" href="css/style_1.css" type="text/css" media="all">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js?ver=6.0.2" id="system-climate-jquery-js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js" id="system-climate-owl-carousel-js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js" id="system-climate-fancybox-js-js"></script>
+<script type="text/javascript" src="js/main.js" id="system-climate-main-js"></script>
+<link rel="https://api.w.org/" href="https://www.valenciya.com.ua/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.valenciya.com.ua/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.valenciya.com.ua/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.2">
+
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="images/favicon.png" sizes="32x32">
+<link rel="icon" href="images/favicon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="images/favicon.png">
+<meta name="msapplication-TileImage" content="https://www.valenciya.com.ua/wp-content/uploads/2018/11/favicon.png">
+		<style type="text/css" id="wp-custom-css">
+			/*.metal_css .title_block:before {
+    content: 'Металеві конвектори';
+    font-size: 23px;
+}
+
+.metal_css .title_block {
+    font-size: 0;
+}
+
+.metal_css .title_block {
+    background: #272727;
+    color: orange;
+    text-align: left;
+	transform: skew(-16deg, 0deg);
+    padding-left: 20px;
+}*/
+
+
+.mp_css .col-md-3:last-child, .mt_css  .col-md-3:last-child{
+    float: right;
+}
+
+.mp_css .col-md-3:nth-child(5) {
+    float: right;
+}
+
+.mp_css {
+    padding-top: 50px;
+}
+
+.mp_css:before {
+    content: 'Металеві конвектори';
+    font-size: 24px;
+    width: 100%;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    background: url(images/arrow_choose.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: contain;
+    height: 80px;
+    padding: 15px;
+}
+		</style>
+		</head>
+
+<body>
+
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T33VD8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-2">
+					<img src="images/logo.png" alt>
+				</div>
+				<div class="col-xs-12 col-md-7">
+					<div class="text_header">
+						<div class="title_header">Офіційний дилер заводу-виробника!</div>
+						<p><img src="images/icon_shield.png" alt>ІЧ опалення обігрівачі від виробника з гарантією!</p>
+						<p><img src="images/icon_package.png" alt>Доставка по Україні протягом 3 днів.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<ul class="phone_numbers">
+
+													
+								<li>Kyivstar: +38 (068) 390-30-30</li>
+
+							
+								<li>Vodafone: +38 (050) 931-28-88</li>
+
+							
+								<li>Lifecell: +38 (063) 213-91-90</li>
+
+							  
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="block block_main">
+	<div class="container">
+		<div class="block_header_top">
+			<div class="row">
+				<div class="col-xs-12 col-md-9">
+					<ul class="nav">
+						<li><a href="#adv" class="btn_ancor">Переваги</a></li>
+						<li><a href="#panel" class="btn_ancor">Будова панелей</a></li>
+						<li><a href="#catalog" class="btn_ancor">Каталог та вартість</a></li>
+						<li><a href="#otziv" class="btn_ancor">Відгуки</a></li>
+						<li><a href="#video" class="btn_ancor">Відеоогляди</a></li>
+						<li><a href="#garantia" class="btn_ancor">Гарантія</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<a href="#pol_consult" class="btn btn_modal btn_call_wt">отримати консультацію</a>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 30px;">
+			<div class="col-xs-12 col-md-9 text_first_screen">
+				<img src="images/Logo_VENECIA.png" alt>
+				<h1>ІНФРАКРАСНІ КЕРАМІЧНІ ОБІГРІВАЧІ ВАЛЕНСІЯ</h1>
+				<p class="post_utp">Почніть заощаджувати з нами! Або ми повернемо Вам гроші!</p>
+				<div class="block_info_lamp">
+					<div class="block_info_lamp_left">
+
+													
+								<span>Встигніть зробити свій вибір!     </span>
+							
+								Кількість обмежена!
+							  
+						
+					</div>
+					<img src="images/lamp.png" alt>
+					<div class="block_info_lamp_right">
+
+													
+								<span>6 Років  Гарантії  </span>
+							
+								на обігрівач
+							  
+						
+					</div>
+				</div>
+				<span>
+					При покупці на суму від 15000 грн <span>отримай додаткову знижку 5% </span>				</span>
+				<div class="video_block">
+					<div class="vidio_b">
+						<div class="inner"></div>
+						<div class="video_blok">
+							<div class="inner_2">								
+							</div>
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/yVNWtdLq8oc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>						</div>
+					</div>
+				</div>
+			</div> 
+			<div class="col-xs-12 col-md-3">
+				<div class="block_form">
+					<div><span> ОТРИМАЙТЕ БЕЗКОШТОВНИЙ ПРОРАХУНОК!</span></div>
+					<form action="https://valenciya.pp.ua/mail.php" method="POST" name="POST">
+						<input type="hidden" name="title_form" value="Форма с первого блока">
+						<input type="text" name="name" placeholder="Введіть ім'я">
+						<input type="text" name="phone" required placeholder="Введіть телефон">
+						<input type="submit" name="submit" class="btn" value="отримати прорахунок">
+					</form>
+				</div>
+			</div> 
+		</div>
+	</div>
+</div>
+<div class="block block_adv_main">
+	<div class="container">
+		<div class="title margin_45 " id="adv" style="margin-bottom: 25px;">ЧОМУ ІНФРАКРАСНІ ОБІГРІВАЧІ ?</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+					<span>01.ДОБРЕ ЗБЕРІГАЮТЬ ТЕПЛО</span>
+					<p>Інфрачервоні керамічні панелі добре зберігають тепло. Час остигання від повного нагріву до кімнатної температури приблизно від 50 хвилин до 90 хвилин за рахунок нагрітої кераміки до 90 градусів! Зі відомих трьох способів теплопередачі у них є два: конвекція та інфрачервоне. випромінювання.
+
+</p>
+
+					
+					<span>02.МАЮТЬ НИЗЬКУ ВАРТІСТЬ</span>
+					<p>Ціна на наші панелі нижча, ніж на інфрачервоні панелі конкурентів!
+
+</p>
+
+					
+					<span>03.ЕКОНОМІЯ ЕЛЕКТРОЕНЕРГІЇ</span>
+					<p>З терморегулятором обігрівач працює на добу всього від 7-12 годин зберігаючи постійну задану температуру, залежно від температури, що виставляється Вами, що значно допомагає економити електроенергію.
+
+</p>
+
+					
+					<span>04.ШИРОТА ВИКОРИСТАННЯ</span>
+					<p>Наші панелі можна використовувати як основне, так і як додаткове опалення в квартирах, будинках, офісах та на виробництві.
+
+</p>
+
+					</div><div class="col-xs-12 col-md-6">
+					<span>05.БЕЗПЕЧНІ І ЕКОЛОГІЧНІ</span>
+					<p>Не сушать повітря, не спалюють кисень, не піднімають пил, створюють м'яке тепло, немає ризику займання, безпечні для дітей, зручні та прості у використанні. Сприятливо впливають на здоров'я людини за допомогою екологічної кераміки та перешкоджають утворенню грибка на стінах.
+
+</p>
+
+					
+					<span>06.ПРАЦЮЮТЬ БЕЗШУМНО</span>
+					<p>Керамічні обігрівачі працюють безшумно при нагріванні та охолодженні.
+
+</p>
+
+					
+					<span>07.МАЮТЬ ТЕРМОРЕГУЛЮВАННЯ</span>
+					<p>Серії Терміко та Перфекто оснащені вбудованим терморегулятором, який задає температуру панелі від 0 до 90 градусів, а також алюмінієвою задньою пластиною, що нагрівається до 90 градусів.
+
+</p>
+
+					
+					<span>08.НЕ МІСТЯТЬ РІДИНИ</span>
+					<p>Керамічні обігрівачі "НЕ МІСТЯТЬ РІДИНИ"! Плюси очевидні: не потрібна дозаправка, обігрівачі не замерзають і не протікають.
+
+</p>
+
+					</div>		</div>
+
+	</div>
+</div>
+
+<div class="block block_venecia_detali" id="panel">
+	<div class="container">
+		<div class="title margin_45 " style="margin-bottom: 80px;">обігрівач Валенція в деталях:</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-5">
+				<img src="images/Logo_VENECIA.png" alt style="margin-bottom: 40px;">
+				<p>Інфрачервоні керамічні панелі мають два способи теплопередачі. Перший – це конвекційний. Потік холодного повітря сконцентрований унизу, нагрівається за рахунок проходження через нагрівальний елемент та теплообмінник.</p>
+<p>Другий – інфрачервоне випромінювання. Нагрівальний елемент гріє керамічну плиту, яка, в свою чергу, нагріває повітря за допомогою інфрачервоного випромінювання.</p>
+			</div>
+			<div class="col-xs-12 col-md-7">
+				<img src="images/SHEMA_VENECIA.png" alt class="shema_venecia">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="block block_sign">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-1"></div>
+			<div class="col-xs-12 col-md-11">
+				<div class="box_sign">
+					<img src="images/SIGN_____.png" alt class="img_sign">
+					<div class="txt_box_sign">
+						<div>Увага!</div>
+						<p>Якщо Вам не сподобаються наші обігрівачі, протягом 2-х тижнів Ви можете їх повернути, і</p>
+						<span>Ми повернемо вам гроші</span>
+					</div>
+					<img src="images/Photo_money.jpg" alt class="img_money">
+				</div>
+			</div>
+		</div>
+	</div>
+	<img src="images/sign_shadow.png" alt class="sign_shadow">
+</div>
+<div class="block block_model" id="catalog">
+	<div class="container">
+		<img src="images/arrow_choose.png" alt class="arrow_choose">
+		<div class="title margin_45 center">Виберіть модель обігрівача!</div>
+	</div>
+</div>
+
+
+		<div class="block block_pod block_seria ">
+			<div class="container">
+				<div class="row header_block_seria">
+					<div class="col-xs-12 col-md-5">
+						<img src="images/Logo_VENECIA.png" alt>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="title_block">1.Обігрівачі <span>Валенсія</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3 opis_block_seria">
+						<div class="title_block_series">Особливості серії:</div>
+						<div class="text_block_series">Серія Валенсія призначена для основного і додаткового опалення, з коробом для конвекції і механічним терморегулятором.
+</div>
+						<div class="kharakteristik_seria">
+							<p><span>Матеріал:</span> Кераміка</p>
+							<p><span>Робоча t<sup>o</sup> поверхні:</span> 80±5<sup>o</sup>C</p>
+							<p><span>Короб для конвекції:</span> Є</p>
+							<p><span>Доп. конвектор:</span> Немає</p>
+							<p><span>Терморегулятор:</span> Є</p>
+							<p><span>Програматор:</span> Немає</p>
+							<p><span>Колір:</span> Бежевий, Бежевий під мармур </p>
+							<!-- <p>Бежевый под мрамор</p> -->
+						</div>
+						<div class="strok">
+							<span>Термін доставки:</span>1-3 дні						</div>
+						<div class="nalichie">
+							Товар є в наявності
+						</div>
+						<div class="shema_paneli">
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/schema-3_termico-pro.jpg" data-fancybox="images">Дивитись схему панелі</a>
+						</div>
+						
+							<div class="shema_paneli videoobzor">
+								<a data-fancybox href="https://www.youtube.com/embed/yVNWtdLq8oc">Дивитися відеоогляд</a>
+							</div>
+
+							
+					</div>
+
+
+
+					<div class="col-xs-12 col-md-3"></div>
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Valencia КМ 750</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/-750-1-e1542017011742.jpg" data-fancybox="images_1">
+									<img src="images/%C3%90%C2%BF%C3%90%C2%BA%C3%90%C2%B8%C3%91_-750-1-300x300.jpg" alt>
+									<span style="background-image: url(images/25.png); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-1200-regul.png" data-fancybox="images_1"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/viber-image-1.jpg" data-fancybox="images_1"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/пкит-750-1-1.jpg" data-fancybox="images_1"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/пкит-750.jpg" data-fancybox="images_1"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/пкит-750-3.jpg" data-fancybox="images_1"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-5.png" data-fancybox="images_1"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 15-25 м2 </p>
+									<p><span>Потужність:</span> 750 Вт</p>
+									<p><span>Споживання за добу:</span> 5,25 кВт</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 1200х600х40 мм</p>
+									<p><span>Вага:</span> 25 кг</p>
+									<p><span>Терморегулятор:</span> <span>Вбудований</span></p>
+									<p><span>Програматор:</span> Немає</p>
+									<p><span>Короб для конвекції:</span> <span>Є</span></p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">3660 грн</div>
+									<div class="new_prise">3500 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Valencia КМ 350</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/-350-1-e1542020225805.jpg" data-fancybox="images_2">
+									<img src="images/%C3%90%C2%BF%C3%90%C2%BA%C3%90%C2%B8%C3%91_-350-1-300x300.jpg" alt>
+									<span style="background-image: url(images/15-1.png); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/пкит-350-2.jpg" data-fancybox="images_2"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/viber-image.jpg" data-fancybox="images_2"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП400-бел-сайт-бок-1.jpg" data-fancybox="images_2"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-350-700-regul-1.png" data-fancybox="images_2"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/изображение_viber_2019-07-09_19-50-09.jpg" data-fancybox="images_2"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 10-15 м2 </p>
+									<p><span>Потужність:</span> 350 Вт</p>
+									<p><span>Споживання за добу:</span> 2,45 кВт</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 600х600х40 мм</p>
+									<p><span>Вага:</span> 12,5 кг</p>
+									<p><span>Терморегулятор:</span> <span>Вбудований</span></p>
+									<p><span>Програматор:</span> Немає</p>
+									<p><span>Короб для конвекції:</span> <span>Є</span></p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">3150 грн</div>
+									<div class="new_prise">2700 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+										
+
+			</div>
+		</div>
+	</div>
+	
+		
+		<div class="block block_pod block_seria ">
+			<div class="container">
+				<div class="row header_block_seria">
+					<div class="col-xs-12 col-md-5">
+						<img src="images/Logo_VENECIA.png" alt>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="title_block">2. Обігрівачі <span>«Валенсія біо»</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3 opis_block_seria">
+						<div class="title_block_series">Особливості серії:</div>
+						<div class="text_block_series">Серія Валенсія призначена для основного і додаткового опалення, з подвійним коробом для конвекції, кнопками перемикання потужності
+</div>
+						<div class="kharakteristik_seria">
+							<p><span>Матеріал:</span> Кераміка</p>
+							<p><span>Робоча t<sup>o</sup> поверхні:</span> 80±5<sup>o</sup>C</p>
+							<p><span>Короб для конвекції:</span> Є</p>
+							<p><span>Доп. конвектор:</span> Є</p>
+							<p><span>Терморегулятор:</span> Є</p>
+							<p><span>Програматор:</span> Немає</p>
+							<p><span>Колір:</span> Бежевий, Бежевий під мармур </p>
+							<!-- <p>Бежевый под мрамор</p> -->
+						</div>
+						<div class="strok">
+							<span>Термін доставки: </span>1-3 дні						</div>
+						<div class="nalichie">
+							Товар є в наявності
+						</div>
+						<div class="shema_paneli">
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/schema-4_perfecto-bio.jpg" data-fancybox="images">Дивитись схему панелі</a>
+						</div>
+						
+							<div class="shema_paneli videoobzor">
+								<a data-fancybox href="https://www.youtube.com/embed/yVNWtdLq8oc">Дивитись відео огляд</a>
+							</div>
+
+							
+					</div>
+
+
+
+					<div class="col-xs-12 col-md-3"></div>
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Valencia БІО КМ 1400</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/-750-1-e1542017011742.jpg" data-fancybox="images_3">
+									<img src="images/%C3%90%C2%BF%C3%90%C2%BA%C3%90%C2%B8%C3%91_-750-1-300x300.jpg" alt>
+									<span style="background-image: url(images/35.png); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/viber-image-1.jpg" data-fancybox="images_3"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-1200-regul.png" data-fancybox="images_3"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/пкит-750-1-1.jpg" data-fancybox="images_3"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/пкит-750.jpg" data-fancybox="images_3"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП800-белый-зад.jpg" data-fancybox="images_3"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-1200-regul-1.png" data-fancybox="images_3"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-350-700-regul.png" data-fancybox="images_3"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-2.png" data-fancybox="images_3"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-1.png" data-fancybox="images_3"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 25-35 м2 </p>
+									<p><span>Потужність:</span> 1400 Вт</p>
+									<p><span>Споживання за добу:</span> 9,8 кВт</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 1200х600х55 мм</p>
+									<p><span>Вага:</span> 35 кг</p>
+									<p><span>Терморегулятор:</span> <span>Вбудований</span></p>
+									<p><span>Програматор:</span> Немає</p>
+									<p><span>Короб для конвекції:</span> <span>Два</span></p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">4600грн</div>
+									<div class="new_prise">4350 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Valencia БІО КМ 700</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/-350-1-e1542020225805.jpg" data-fancybox="images_4">
+									<img src="images/%C3%90%C2%BF%C3%90%C2%BA%C3%90%C2%B8%C3%91_-350-1-300x300.jpg" alt>
+									<span style="background-image: url(images/20.png); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-350-700-regul.png" data-fancybox="images_4"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-2.png" data-fancybox="images_4"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-1.png" data-fancybox="images_4"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/пкит-350-2.jpg" data-fancybox="images_4"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/пкит-350-1-1.jpg" data-fancybox="images_4"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП400-бел-сайт-бок-1.jpg" data-fancybox="images_4"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/изображение_viber_2019-07-09_19-50-09.jpg" data-fancybox="images_4"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/viber-image-1.jpg" data-fancybox="images_4"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-350-700-regul-1.png" data-fancybox="images_4"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 10-20 м2 </p>
+									<p><span>Потужність:</span> 700 Вт</p>
+									<p><span>Споживання за добу:</span> 4,9 кВт</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 600х600х55 мм</p>
+									<p><span>Вага:</span> 18 кг</p>
+									<p><span>Терморегулятор:</span> <span>Вбудований</span></p>
+									<p><span>Програматор:</span> Немає</p>
+									<p><span>Короб для конвекції:</span> <span>Два</span></p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">3565 грн</div>
+									<div class="new_prise">3100 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+										
+
+			</div>
+		</div>
+	</div>
+	
+		
+		<div class="block block_pod block_seria ">
+			<div class="container">
+				<div class="row header_block_seria">
+					<div class="col-xs-12 col-md-5">
+						<img src="images/Logo_VENECIA.png" alt>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="title_block">3. Обігрівачі <span>«Валенсія PRO»</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3 opis_block_seria">
+						<div class="title_block_series">Особливості серії:</div>
+						<div class="text_block_series">Серія Lifex Pro призначена для основного так і для додаткового опалення, з коробом для конвекції та погодинним Програматором.
+</div>
+						<div class="kharakteristik_seria">
+							<p><span>Матеріал:</span> Кераміка</p>
+							<p><span>Робоча t<sup>o</sup> поверхні:</span> 80±5<sup>o</sup>C</p>
+							<p><span>Короб для конвекції:</span> Є</p>
+							<p><span>Доп. конвектор:</span> Немає</p>
+							<p><span>Терморегулятор:</span> Є</p>
+							<p><span>Програматор:</span> Є</p>
+							<p><span>Колір:</span> Бежевий, Бежевий під мармур </p>
+							<!-- <p>Бежевый под мрамор</p> -->
+						</div>
+						<div class="strok">
+							<span>Термін доставки: </span>1-3 дні						</div>
+						<div class="nalichie">
+							Товар Є в наявності
+						</div>
+						<div class="shema_paneli">
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/schema-3_termico-pro-1.jpg" data-fancybox="images">Дивитись схему панелі</a>
+						</div>
+						
+							<div class="shema_paneli videoobzor">
+								<a data-fancybox href="https://www.youtube.com/embed/yVNWtdLq8oc">Дивитись відео огляд</a>
+							</div>
+
+							
+					</div>
+
+
+
+					<div class="col-xs-12 col-md-3"></div>
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Valencia КП 750</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-1200-program.png" data-fancybox="images_5">
+									<img src="images/Valencia-1200-program-300x300.png" alt>
+									<span style="background-image: url(images/25.png); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/800-белый-терморегулятор-1-e1542029604860.jpg" data-fancybox="images_5"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-3-1.png" data-fancybox="images_5"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП800-белый-бок.jpg" data-fancybox="images_5"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП800-белый-зад.jpg" data-fancybox="images_5"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП800-перфорация.jpg" data-fancybox="images_5"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/перфораци-Classic.jpg" data-fancybox="images_5"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-1200-program.png" data-fancybox="images_5"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 20-25 м2 </p>
+									<p><span>Потужність:</span> 750 Вт</p>
+									<p><span>Споживання за добу:</span> 6,4 кВт</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 1200х600х50 мм</p>
+									<p><span>Вага:</span> 23 кг</p>
+									<p><span>Терморегулятор:</span> <span>Вбудований</span></p>
+									<p><span>Програматор:</span> <span>Є</span></p>
+									<p><span>Короб для конвекції:</span> <span>Є</span></p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">4489 грн</div>
+									<div class="new_prise">4200 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Valencia КП 350</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/-белый-e1542029667339.jpg" data-fancybox="images_6">
+									<img src="images/%C3%90%C2%BB%C3%90%C2%B8%C3%91_%C3%90%C2%BE-%C3%90%C2%B1%C3%90%C2%B5%C3%90%C2%BB%C3%91_%C3%90%C2%B9-282x300.jpg" alt>
+									<span style="background-image: url(images/15.png); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП400-бел-сайт-бок.jpg" data-fancybox="images_6"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП400-бел-сайт-зад.jpg" data-fancybox="images_6"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП400белый-лицо.jpg" data-fancybox="images_6"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-3-1.png" data-fancybox="images_6"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-5.png" data-fancybox="images_6"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 10-15 м2 </p>
+									<p><span>Потужність:</span> 350 Вт</p>
+									<p><span>Споживання за добу:</span> 3,2 кВт</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 600х600х40 мм</p>
+									<p><span>Вага:</span> 12 кг</p>
+									<p><span>Терморегулятор:</span> <span>Вбудований</span></p>
+									<p><span>Програматор:</span> <span>Встроеный програматор</span></p>
+									<p><span>Короб для конвекції:</span> <span>Є</span></p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">3550 грн</div>
+									<div class="new_prise">3200 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+										
+
+			</div>
+		</div>
+	</div>
+	
+		
+		<div class="block block_pod block_seria ">
+			<div class="container">
+				<div class="row header_block_seria">
+					<div class="col-xs-12 col-md-5">
+						<img src="images/Logo_VENECIA.png" alt>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="title_block">4. Обігрівачі <span>«Програматор біо»</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3 opis_block_seria">
+						<div class="title_block_series">Особливості серії:</div>
+						<div class="text_block_series">Серія Програматор біо призначена для основного так і для додаткового опалення, з коробом для конвекції та погодинним Програматором.
+ </div>
+						<div class="kharakteristik_seria">
+							<p><span>Матеріал:</span> Кераміка</p>
+							<p><span>Робоча t<sup>o</sup> поверхні:</span> 80±5<sup>o</sup>C</p>
+							<p><span>Короб для конвекції:</span> Є</p>
+							<p><span>Доп. конвектор:</span> Є</p>
+							<p><span>Терморегулятор:</span> Є</p>
+							<p><span>Програматор:</span> Є</p>
+							<p><span>Колір:</span> Бежевий, Бежевий під мармур </p>
+							<!-- <p>Бежевый под мрамор</p> -->
+						</div>
+						<div class="strok">
+							<span>Термін доставки: </span>1-3 дні						</div>
+						<div class="nalichie">
+							Товар Є в наявності
+						</div>
+						<div class="shema_paneli">
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/schema-5_programmator-bio.jpg" data-fancybox="images">Дивитись схему панелі</a>
+						</div>
+						
+							<div class="shema_paneli videoobzor">
+								<a data-fancybox href="https://www.youtube.com/embed/yVNWtdLq8oc">Дивитись відео огляд</a>
+							</div>
+
+							
+					</div>
+
+
+
+					<div class="col-xs-12 col-md-3"></div>
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Valencia КП 1400</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-1200-program.png" data-fancybox="images_7">
+									<img src="images/Valencia-1200-program-300x300.png" alt>
+									<span style="background-image: url(images/35.png); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-1200-program.png" data-fancybox="images_7"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-3.png" data-fancybox="images_7"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/КОП800-белый-терморегулятор.jpg" data-fancybox="images_7"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-5.png" data-fancybox="images_7"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-4.png" data-fancybox="images_7"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 25-35 м2 </p>
+									<p><span>Потужність:</span> 1400 Вт</p>
+									<p><span>Споживання за добу:</span> 9,8 кВт</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 1200х600х55 мм</p>
+									<p><span>Вага:</span> 36 кг</p>
+									<p><span>Терморегулятор:</span> <span>Вбудований</span></p>
+									<p><span>Програматор:</span> <span>Є</span></p>
+									<p><span>Короб для конвекції:</span> <span>Два</span></p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">5315 грн</div>
+									<div class="new_prise">4900 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Valencia КП 700</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ТКП700белый-лицо.jpg" data-fancybox="images_8">
+									<img src="images/%C3%90%C2%A2%C3%90_%C3%90_700%C3%90%C2%B1%C3%90%C2%B5%C3%90%C2%BB%C3%91_%C3%90%C2%B9-%C3%90%C2%BB%C3%90%C2%B8%C3%91_%C3%90%C2%BE-282x300.jpg" alt>
+									<span style="background-image: url(images/20.png); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ТКП700белый-лицо-1.jpg" data-fancybox="images_8"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ТКП700-бел-сайт-зад.jpg" data-fancybox="images_8"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-3.png" data-fancybox="images_8"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ТКП700белый-зад.jpg" data-fancybox="images_8"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/изображение_viber_2019-07-09_19-50-09.jpg" data-fancybox="images_8"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 10-20 м2 </p>
+									<p><span>Потужність:</span> 700 Вт</p>
+									<p><span>Споживання за добу:</span> 4,9 кВт</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 600х600х55 мм</p>
+									<p><span>Вага:</span> 18 кг</p>
+									<p><span>Терморегулятор:</span> <span>Вбудований</span></p>
+									<p><span>Програматор:</span> <span>Є</span></p>
+									<p><span>Короб для конвекції:</span> <span>Два</span></p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">4390 грн</div>
+									<div class="new_prise">3900 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+										
+
+			</div>
+		</div>
+	</div>
+	
+		
+		<div class="block block_pod block_seria ">
+			<div class="container">
+				<div class="row header_block_seria">
+					<div class="col-xs-12 col-md-5">
+						<img src="images/Logo_VENECIA.png" alt>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="title_block">5. Обігрівачі <span>Підлоговий (МП-2) 800</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3 opis_block_seria">
+						<div class="title_block_series">Особливості серії:</div>
+						<div class="text_block_series">Серія ПКП біо призначена для основного так і для додаткового опалення, подвійна керамічна панель з подвійним коробом для конвекції та погодинним програматором.
+ </div>
+						<div class="kharakteristik_seria">
+							<p><span>Матеріал:</span> Кераміка</p>
+							<p><span>Робоча t<sup>o</sup> поверхні:</span> 90±5<sup>o</sup>C</p>
+							<p><span>Короб для конвекції:</span> Є</p>
+							<p><span>Доп. конвектор:</span> Є</p>
+							<p><span>Терморегулятор:</span> Є</p>
+							<p><span>Програматор:</span> Є</p>
+							<p><span>Колір:</span> белый,черный </p>
+							<!-- <p>Бежевый под мрамор</p> -->
+						</div>
+						<div class="strok">
+							<span>Термін доставки: </span>1-3 дні						</div>
+						<div class="nalichie">
+							Товар Є в наявності
+						</div>
+						<div class="shema_paneli">
+							<a href data-fancybox="images">Дивитись схему панелі</a>
+						</div>
+						
+					</div>
+
+
+
+					<div class="col-xs-12 col-md-3"></div>
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Підлоговий керамічний обігрівач (МП-2) 1200</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ПКП1200-сайт-лицо.jpg" data-fancybox="images_9">
+									<img src="images/%C3%90_%C3%90_%C3%90_1200-%C3%91_%C3%90%C2%B0%C3%90%C2%B9%C3%91_-%C3%90%C2%BB%C3%90%C2%B8%C3%91_%C3%90%C2%BE-300x300.jpg" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ПКП1200-беж-бок.1.jpg" data-fancybox="images_9"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ПКП1200-сайт-бок.jpg" data-fancybox="images_9"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Valencia-det-3-1.png" data-fancybox="images_9"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 25-30м2 </p>
+									<p><span>Потужність:</span> 1200 Вт</p>
+									<p><span>Споживання за добу:</span> 9.6</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 900х450х60 мм</p>
+									<p><span>Вага:</span> 30</p>
+									<p><span>Терморегулятор:</span> Є</p>
+									<p><span>Програматор:</span> Є</p>
+									<p><span>Короб для конвекції:</span> Є</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">6350 грн</div>
+									<div class="new_prise">5590 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">Підлоговий керамічний обігрівач (МП-2) 800</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ПКП800-полностью-сбоку.jpg" data-fancybox="images_10">
+									<img src="images/%C3%90_%C3%90_%C3%90_800-%C3%90%C2%BF%C3%90%C2%BE%C3%90%C2%BB%C3%90%C2%BD%C3%90%C2%BE%C3%91_%C3%91_%C3%91_%C3%91_-%C3%91_%C3%90%C2%B1%C3%90%C2%BE%C3%90%C2%BA%C3%91_-297x300.jpg" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																												
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ПКП800-полностью-сбоку.jpg" data-fancybox="images_10"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ПКП800-перф.jpg" data-fancybox="images_10"></a>
+									
+																			
+											
+											<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/ПКП800-сверху-сбоку.jpg" data-fancybox="images_10"></a>
+									
+																												
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 17-22 </p>
+									<p><span>Потужність:</span> 800 Вт</p>
+									<p><span>Споживання за добу:</span> 6,4 кВт</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 600х600х60 мм</p>
+									<p><span>Вага:</span> 22 кг</p>
+									<p><span>Терморегулятор:</span> Немає</p>
+									<p><span>Програматор:</span> Є</p>
+									<p><span>Короб для конвекції:</span> Є</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">4590 грн</div>
+									<div class="new_prise">4290 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+										
+
+			</div>
+		</div>
+	</div>
+	
+		<div class="block block_perevaga">
+			<div class="container">
+				<div class="title margin_45 center">Основні переваги моделей із Програматором:</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<ul class="list_adv">
+							<li>Автоматичне керування температурою (t) повітря у приміщенні</li>
+							<li>Регулювання температури поверхні панелі керамічного обігрівача</li>
+							<li>Робота по годиннику з добовим або тижневим програмним циклом</li>
+							<li>Має дуже просте налаштування, з якого розбереться навіть дитина</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<img src="images/programmator_venecia.png" alt>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<ul class="list_adv">
+							<li>Контроль наявності заземлення, який можна вимкнути за необхідност</li>
+							<li>Є захист від стрибків напруги в мережі живлення обігрівача</li>
+							<li>Термоконтролер може працювати в діапазоні від 160 до 260 В</li>
+							<li>Плавне включення нагрівального елемента, що підвищує економічність</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<div class="block block_pod block_seria mp_css">
+			<div class="container">
+				<div class="row header_block_seria">
+					<div class="col-xs-12 col-md-5">
+						<img src="images/Logo_VENECIA.png" alt>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="title_block">6. Обігрівачі <span>VALENCIA МП</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3 opis_block_seria">
+						<div class="title_block_series">Особливості серії:</div>
+						<div class="text_block_series"></div>
+						<div class="kharakteristik_seria">
+							<p><span>Матеріал:</span> </p>
+							<p><span>Робоча t<sup>o</sup> поверхні:</span> <sup>o</sup>C</p>
+							<p><span>Короб для конвекції:</span> Немає</p>
+							<p><span>Доп. конвектор:</span> Немає</p>
+							<p><span>Терморегулятор:</span> Немає</p>
+							<p><span>Програматор:</span> Немає</p>
+							<p><span>Колір:</span>  </p>
+							<!-- <p>Бежевый под мрамор</p> -->
+						</div>
+						<div class="strok">
+							<span>Термін доставки: </span>						</div>
+						<div class="nalichie">
+							Товар Є в наявності
+						</div>
+						<div class="shema_paneli">
+							<a href data-fancybox="images">Дивитись схему панелі</a>
+						</div>
+						
+					</div>
+
+
+
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">ІНФРАЧЕРВОНИЙ ОБІГРІВАЧ VALENCIA МП 700</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2020/09/iwarm.com_.ua_valencia_mp_700-868x1108.png" data-fancybox="images_11">
+									<img src="images/iwarm.com_.ua_valencia_mp_700-868x1108-235x300.png" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																		
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 15 кв.м </p>
+									<p><span>Потужність:</span> 700 Вт</p>
+									<p><span>Споживання за добу:</span> 7 кв</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 1250х500х50 мм</p>
+									<p><span>Вага:</span> 10 кг</p>
+									<p><span>Терморегулятор:</span> Є</p>
+									<p><span>Програматор:</span> електронний Програматор</p>
+									<p><span>Короб для конвекції:</span> Є</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">7400</div>
+									<div class="new_prise">5490 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">ІНФРАЧЕРВОНИЙ ОБІГРІВАЧ VALENCIA МП 450</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2020/09/iwarm.com_.ua_valencia_mp_225-350-868x1108.png" data-fancybox="images_12">
+									<img src="images/iwarm.com_.ua_valencia_mp_225-350-868x1108-235x300.png" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																		
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 12 кв.м </p>
+									<p><span>Потужність:</span> 450 Вт</p>
+									<p><span>Споживання за добу:</span> 4.5</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 1070х500х50 мм</p>
+									<p><span>Вага:</span> 8 кг</p>
+									<p><span>Терморегулятор:</span> Терморегулятор</p>
+									<p><span>Програматор:</span> електронний Програматор</p>
+									<p><span>Короб для конвекції:</span> Немає</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">7500</div>
+									<div class="new_prise">5090 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">ІНФРАЧЕРВОНИЙ ОБІГРІВАЧ VALENCIA МП 350</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2020/09/iwarm.com_.ua_valencia_mp_225-350-868x1108.png" data-fancybox="images_13">
+									<img src="images/iwarm.com_.ua_valencia_mp_225-350-868x1108-235x300.png" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																		
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 10 кв.м </p>
+									<p><span>Потужність:</span> 350 Вт</p>
+									<p><span>Споживання за добу:</span> 3.5 кв</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 800х500х50 мм</p>
+									<p><span>Вага:</span> 7 кг</p>
+									<p><span>Терморегулятор:</span> Є</p>
+									<p><span>Програматор:</span> електронний Програматор</p>
+									<p><span>Короб для конвекції:</span> Є</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">6000</div>
+									<div class="new_prise">4590 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">ІНФРАЧЕРВОНИЙ ОБІГРІВАЧ VALENCIA МП 225</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2020/09/iwarm.com_.ua_valencia_mp_225-350-868x1108.png" data-fancybox="images_14">
+									<img src="images/iwarm.com_.ua_valencia_mp_225-350-868x1108-235x300.png" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																		
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 7 кв.м </p>
+									<p><span>Потужність:</span> 225 Вт</p>
+									<p><span>Споживання за добу:</span> </p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 500х500х50 мм</p>
+									<p><span>Вага:</span> 5 кг</p>
+									<p><span>Терморегулятор:</span> Є</p>
+									<p><span>Програматор:</span> електронний Програматор</p>
+									<p><span>Короб для конвекції:</span> Є</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">4500</div>
+									<div class="new_prise">3690 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+										
+
+			</div>
+		</div>
+	</div>
+	
+		
+		<div class="block block_pod block_seria mt_css">
+			<div class="container">
+				<div class="row header_block_seria">
+					<div class="col-xs-12 col-md-5">
+						<img src="images/Logo_VENECIA.png" alt>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="title_block">7. Обігрівачі <span>VALENCIA МТ</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3 opis_block_seria">
+						<div class="title_block_series">Особливості серії:</div>
+						<div class="text_block_series"></div>
+						<div class="kharakteristik_seria">
+							<p><span>Матеріал:</span> </p>
+							<p><span>Робоча t<sup>o</sup> поверхні:</span> <sup>o</sup>C</p>
+							<p><span>Короб для конвекції:</span> Немає</p>
+							<p><span>Доп. конвектор:</span> Немає</p>
+							<p><span>Терморегулятор:</span> Немає</p>
+							<p><span>Програматор:</span> Немає</p>
+							<p><span>Колір:</span>  </p>
+							<!-- <p>Бежевый под мрамор</p> -->
+						</div>
+						<div class="strok">
+							<span>Термін доставки: </span>						</div>
+						<div class="nalichie">
+							Товар Є в наявності
+						</div>
+						<div class="shema_paneli">
+							<a href data-fancybox="images">Дивитись схему панелі</a>
+						</div>
+						
+					</div>
+
+
+
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">ІНФРАЧЕРВОНИЙ ОБІГРІВАЧ VALENCIA МТ 700</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2020/09/iwarm.com_.ua_valencia_mp_700-868x1108.png" data-fancybox="images_15">
+									<img src="images/iwarm.com_.ua_valencia_mp_700-868x1108-235x300.png" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																		
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 20 кв.м </p>
+									<p><span>Потужність:</span> 700 Вт</p>
+									<p><span>Споживання за добу:</span> 7 кв</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 1250х500х50 мм</p>
+									<p><span>Вага:</span> 10 кг</p>
+									<p><span>Терморегулятор:</span> Є</p>
+									<p><span>Програматор:</span> Немає</p>
+									<p><span>Короб для конвекції:</span> Є</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">700</div>
+									<div class="new_prise">4990 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">ІНФРАЧЕРВОНИЙ ОБІГРІВАЧ VALENCIA МТ 350</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2020/09/iwarm.com_.ua_valencia_mp_700-868x1108.png" data-fancybox="images_16">
+									<img src="images/iwarm.com_.ua_valencia_mp_700-868x1108-235x300.png" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																		
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 10 кв.м </p>
+									<p><span>Потужність:</span> 350 Вт</p>
+									<p><span>Споживання за добу:</span> 4 кв</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 800х500х50 мм</p>
+									<p><span>Вага:</span> 7 кг</p>
+									<p><span>Терморегулятор:</span> Ест</p>
+									<p><span>Програматор:</span> Немає</p>
+									<p><span>Короб для конвекції:</span> Є</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">4500</div>
+									<div class="new_prise">3890 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">ІНФРАЧЕРВОНИЙ ОБІГРІВАЧ VALENCIA МТ 225</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2020/09/iwarm.com_.ua_valencia_mp_225-350-868x1108.png" data-fancybox="images_17">
+									<img src="images/iwarm.com_.ua_valencia_mp_225-350-868x1108-235x300.png" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																		
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 3 кв.м </p>
+									<p><span>Потужність:</span> 225 Вт</p>
+									<p><span>Споживання за добу:</span> 3 кв</p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 500х500х50 мм</p>
+									<p><span>Вага:</span> 5 кг</p>
+									<p><span>Терморегулятор:</span> Є</p>
+									<p><span>Програматор:</span> Немає</p>
+									<p><span>Короб для конвекції:</span> Є</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">4300</div>
+									<div class="new_prise">2990 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+					
+
+						<div class="col-xs-12 col-md-3">
+							<div class="product item_product">
+								<div class="title_item_product" data-id="econom_300">ІНФРАЧЕРВОНИЙ ОБІГРІВАЧ VALENCIA МТ 450</div>
+																<a class="main-image" href="https://www.valenciya.com.ua/wp-content/uploads/2020/09/iwarm.com_.ua_valencia_mt_700-1000x1000.png" data-fancybox="images_18">
+									<img src="images/iwarm.com_.ua_valencia_mt_700-1000x1000-300x300.png" alt>
+									<span style="background-image: url(); background-position: 0 0;"></span>
+								</a>
+								<div class="dop_img_prod" style="display: none;">
+
+									
+																		
+									
+									
+									
+									
+									
+								</div>
+								<div class="khar_product">
+									<p><span>Площа обігріву:</span> 10 кв.м </p>
+									<p><span>Потужність:</span> 450 Вт</p>
+									<p><span>Споживання за добу:</span> 4.5 кв </p>
+									<p><span>Напруга:</span> 220-230 В</p>
+									<p><span>Габарити:</span> 1070х500х50 мм</p>
+									<p><span>Вага:</span> 8 кг</p>
+									<p><span>Терморегулятор:</span> Є</p>
+									<p><span>Програматор:</span> Немає</p>
+									<p><span>Короб для конвекції:</span> Є</p>
+								</div>
+								<div class="price_block">
+									<div class="old_prise">6000</div>
+									<div class="new_prise">4590 грн</div>
+								</div>
+								<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+							</div>
+						</div>
+
+						
+										
+
+			</div>
+		</div>
+	</div>
+	
+		
+
+
+
+
+
+
+
+<div class="block block_pod block_komplekt">
+	<div class="container">
+		<div class="title margin_45 center">Комплекти для обігріву:</div>
+		<div class="row">
+						
+				
+					<div class="col-xs-12 col-md-4">
+						<div class="product item_product">
+							<div class="title_item_product" data-id="kom_1">Комплект для обігріву №1</div>
+							
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Komplekt-1_451.jpg" data-fancybox="images"><img src="images/Komplekt-1_451-300x182.jpg" alt><span class="m_45" style="background-image: url(images/45.png); background-position: 0 0;"></span></a>
+							<div class="khar_product">
+								<p><span>Загальна опалювальна площа:</span> до 50 м2</p>
+								<p><span>Загальна Потужність:</span> 1400 В</p>
+								<p><span>Загальне Споживання за добу:</span> 14 кВт</p>
+								<p><span>Загальна Вага:</span> 36 кг</p>
+								<p><span>Комплектація:</span> Валенсія км 700 (2 шт),</p>
+								<p>Відбиваюча плівка у подарунок</p>
+							</div>
+							<div class="price_block">
+								<div class="old_prise">6800 грн</div>
+								<div class="new_prise">6200 грн</div>
+							</div>
+							<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+						</div>
+					</div>
+
+				
+					<div class="col-xs-12 col-md-4">
+						<div class="product item_product">
+							<div class="title_item_product" data-id="kom_1">Комплект для обігріву №2</div>
+							
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Komplekt-2_65.jpg" data-fancybox="images"><img src="images/Komplekt-2_65-300x182.jpg" alt><span class="m_45" style="background-image: url(images/65.png); background-position: 0 0;"></span></a>
+							<div class="khar_product">
+								<p><span>Загальна опалювальна площа:</span> до 70 м2</p>
+								<p><span>Загальна Потужність:</span> 1500 Вт</p>
+								<p><span>Загальне Споживання за добу:</span> 15 кВт</p>
+								<p><span>Загальна Вага:</span> 60 кг</p>
+								<p><span>Комплектація:</span> Валенсія 750  (2 шт),</p>
+								<p>Відбиваюча плівка у подарунок</p>
+							</div>
+							<div class="price_block">
+								<div class="old_prise">7000 грн</div>
+								<div class="new_prise">6800 грн</div>
+							</div>
+							<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+						</div>
+					</div>
+
+				
+					<div class="col-xs-12 col-md-4">
+						<div class="product item_product">
+							<div class="title_item_product" data-id="kom_1">Комплект для обігріву №3</div>
+							
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/Komplekt-3_95.jpg" data-fancybox="images"><img src="images/Komplekt-3_95-300x182.jpg" alt><span class="m_45" style="background-image: url(images/95.png); background-position: 0 0;"></span></a>
+							<div class="khar_product">
+								<p><span>Загальна опалювальна площа:</span> до 95 м2</p>
+								<p><span>Загальна Потужність:</span> 3500 Вт</p>
+								<p><span>Загальне Споживання за добу:</span> 28.кВт</p>
+								<p><span>Загальна Вага:</span> 78 кг</p>
+								<p><span>Комплектація:</span> Валенсія 1400 (2 шт), Валенсія 700 (1).</p>
+								<p>Відбиваюча плівка у подарунок</p>
+							</div>
+							<div class="price_block">
+								<div class="old_prise">11800 грн</div>
+								<div class="new_prise">11500 грн</div>
+							</div>
+							<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+						</div>
+					</div>
+
+				  
+			
+
+
+		</div>
+	</div>
+</div>
+
+<div class="block block_pod block_dop_tovar">
+	<div class="container">
+		<div class="title margin_45 center">з керамічними обігрівачами часто купують:</div>
+		<div class="row">
+
+							
+
+
+					<div class="col-xs-12 col-md-4">
+						<div class="product item_dop_product">
+							<div class="title_item_product" data-id="dop_1">ПІДСТАВКА ПІД обігрівач Валенсія </div>
+							
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2019/11/negki-2.jpg" data-fancybox="images"><img src="images/negki-2.jpg" alt></a>
+							<div class="khar_product">
+
+																											<p><span>Ніжки Маленькі:Валенсія </span></p>
+										<p>Для обігрівачів серії Валенсія
+
+</p>
+									  
+								
+							</div>
+							<div class="price_block">
+								<div class="old_prise">480 грн</div>
+								<div class="new_prise">400 грн</div>
+							</div>
+							<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+						</div>
+					</div>
+
+				
+
+
+					<div class="col-xs-12 col-md-4">
+						<div class="product item_dop_product">
+							<div class="title_item_product" data-id="dop_1">Рушник сушарка:</div>
+							
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/sushilka.jpg" data-fancybox="images"><img src="images/sushilka-300x182.jpg" alt></a>
+							<div class="khar_product">
+
+																											<p><span>Рушник сушарка під Обігрівачі:</span></p>
+										<p>Рушник сушарка для обігрівачів, призначена для сушарки речей.
+
+
+</p>
+									  
+								
+							</div>
+							<div class="price_block">
+								<div class="old_prise">350</div>
+								<div class="new_prise">250 грн</div>
+							</div>
+							<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+						</div>
+					</div>
+
+				
+
+
+					<div class="col-xs-12 col-md-4">
+						<div class="product item_dop_product">
+							<div class="title_item_product" data-id="dop_1">ТЕРМОРЕГУЛЯТОР CEVAL</div>
+							
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/cewal.jpg" data-fancybox="images"><img src="images/cewal-300x182.jpg" alt></a>
+							<div class="khar_product">
+
+																											<p><span>Терморегулятор CEVAL:</span></p>
+										<p>Контролює температуру повітря в приміщеннях за допомогою керування теплотехнічним обладнанням – електрообігрівутелями, тепловентиляторами, електрокотлами.
+
+</p>
+									  
+								
+							</div>
+							<div class="price_block">
+								<div class="old_prise">300 грн</div>
+								<div class="new_prise">400 грн</div>
+							</div>
+							<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+						</div>
+					</div>
+
+				
+
+
+					<div class="col-xs-12 col-md-4">
+						<div class="product item_dop_product">
+							<div class="title_item_product" data-id="dop_1">ТЕРМОРЕГУЛЯТОР TERNEO RZ</div>
+							
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/terneo.jpg" data-fancybox="images"><img src="images/terneo-300x182.jpg" alt></a>
+							<div class="khar_product">
+
+																											<p><span>Розетковий терморегулятор TERNEO RZ:</span></p>
+										<p>Використовується для інфрачервоних панелей та електричних конвекторів. Простий та зручний у використанні. Є можливість роботи в режимі охолодження для роботи з охолоджувачем.
+
+</p>
+									  
+								
+							</div>
+							<div class="price_block">
+								<div class="old_prise">630 грн</div>
+								<div class="new_prise">850 грн</div>
+							</div>
+							<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+						</div>
+					</div>
+
+				
+
+
+					<div class="col-xs-12 col-md-4">
+						<div class="product item_dop_product">
+							<div class="title_item_product" data-id="dop_1">Програматор TESLA PR</div>
+							
+							<a href="https://www.valenciya.com.ua/wp-content/uploads/2018/11/tesla.jpg" data-fancybox="images"><img src="images/tesla-300x182.jpg" alt></a>
+							<div class="khar_product">
+
+																											<p><span>Розетковий терморегулятор TESLA PR:</span></p>
+										<p>Можна виставляти подобово та погодинно ступінь нагрівання приміщення. Призначений для підтримки постійної температури нагрівальними приладами і в діапазоні від 0 до 30 °C.
+
+</p>
+									  
+								
+							</div>
+							<div class="price_block">
+								<div class="old_prise">1400 грн</div>
+								<div class="new_prise">1260 грн</div>
+							</div>
+							<a href="#by_prod" class="btn btn_modal btn_prod"><img src="images/icon_shopping-cart.png" alt>Дізнатись докладніше</a>
+						</div>
+					</div>
+
+				  
+			
+
+		</div>
+
+	</div>
+</div>
+
+<div class="block block_faq">
+	<div class="container">
+		<div class="title margin_45 center">часті питання що задаються:</div>
+		<div class="list_faq">
+
+							
+					<div class="item_faq">
+						<a href="#">
+							<span><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							<span>Чим відрізняється інфрачервоне від інших видів опалення?</span>
+						</a>
+						<div>
+							Подібно сонцю, каміну або російської печі променисте тепло панелей безпосередньо прогріває людину, стіни, предмети в приміщенні, а потім уже, як наслідок, прогрівається повітря. Виключаються такі проблеми, як холодні стіни чи сирі кути. У таких умовах людина почувається набагато краще. Причому комфортною вважатиметься температура на 3-5 градусів нижче, ніж при конвекційному опаленні. Також цей спосіб передачі тепла відіграє важливу роль у визначенні потужності системи опалення. В результаті, на відміну від конвекційних систем, де для обігріву на 10 кв.м береться від 1 кВт енергії, ми вважаємо від 0,5 кВт, що вже у 2 рази менше. А за правильних розрахунків вся система працюватиме 5-7 годин на добу.		</div>
+					</div>
+
+				
+					<div class="item_faq">
+						<a href="#">
+							<span><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							<span>Чи безпечні інфрачервоні обігрівачі для здоров'я?</span>
+						</a>
+						<div>
+							Звісно безпечні. Дані Обігрівачі схвалені Міністерством Охорони Здоров'я України для встановлення у дошкільних, шкільних, лікувальних закладах та ідеально підходять для обігріву приміщень, де людина перебуває тривалий час. Інфрачервоні обігрівачі не сушать повітря, оскільки температура на поверхні відповідає всім санітарним вимогам. Крім того, інфрачервоні хвилі передаються прямо до людини або предметів, що обігрівуються. Дані Обігрівачі не видають жодних запахів. Хіба що в перші хвилини роботи при першому включенні, і це дуже рідкісне явище.</div>
+					</div>
+
+				
+					<div class="item_faq">
+						<a href="#">
+							<span><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							<span>Можна використовувати дані Обігрівачі у ванній?</span>
+						</a>
+						<div>
+							Інфрачервоно-конвективні обігрівачі можна використовувати у ванній, так як обігрівачі відповідають усім нормам електробезпеки. Інфрачервоні Обігрівачі можна використовувати для обігріву квартир, приватних будинків, офісів, приміщень для птиці та інших тварин, для теплиць, гаражів. Систему опалення можна повністю автоматизувати, якщо використовувати терморегулятори. Вона сама підтримуватиме задану температуру. Це суттєво заощадить Ваш бюджет.
+						</div>
+					</div>
+
+				
+					<div class="item_faq">
+						<a href="#">
+							<span><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							<span>Чи є на панелі терморегулятор, чи його потрібно встановлювати?</span>
+						</a>
+						<div>
+							У нашому асортименті є моделі із вбудованим терморегулятором, так і без нього. панелі з терморегулятором практичніші, тому що Ви можете легко регулювати температуру без встановлення додаткового обладнання. панелі без терморегулятора в основному використовуються якщо встановлюються як основне опалення. У такому випадку ставиться зовнішній терморегулятор, який регулюватиме температуру в кімнаті.
+						</div>
+					</div>
+
+				
+					<div class="item_faq">
+						<a href="#">
+							<span><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							<span>Як розрахувати необхідну кількість обігрівачів?</span>
+						</a>
+						<div>
+							Розрахунок потужності систем опалення ґрунтується на розрахунках тепло-втрат приміщення. Враховуються такі характеристики як висота стель, товщина стін, тип приміщення, його призначення (офіс, квартира, будинок, службове приміщення і т.д.). При використанні панелей як додаткове опалення потрібно 30 Вт на 1 м 2 м2. Приклад: на кімнату 12 м 2 як додаткове опалення потрібно ~350 Вт, як основне ~600 Вт.
+						</div>
+					</div>
+
+				  
+			
+
+
+		</div>
+	</div>
+</div>
+<div class="block block_galery">
+	<div class="container">
+		<div class="title margin_45 center">Обігрівачі виробляються в Україні на європейському обладнанні:</div>
+		<div class="owl-carousel owl-theme owl_slide_galery">
+							
+					<img src="images/Photo-slider-21.jpg" alt>
+
+				
+					<img src="images/Photo-slider-31.jpg" alt>
+
+				
+					<img src="images/Photo-slider-4.jpg" alt>
+
+				
+					<img src="images/Photo-slider-5.jpg" alt>
+
+				
+					<img src="images/Photo-slider-1.jpg" alt>
+
+							
+		</div>
+	</div>
+</div>
+<div class="block block_video" id="video">
+	<div class="container">
+		<div class="title margin_45 center">Перегляньте відеовідгуки про керамічні обігрівачі «Валенсія»:</div>
+		<div class="row">
+
+							
+					<div class="col-xs-12 col-md-6">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/nCEDiUHocQA" frameborder="0" allowfullscreen></iframe>					</div>
+
+				
+					<div class="col-xs-12 col-md-6">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/LoeQHmvG3QU" frameborder="0" allowfullscreen></iframe>					</div>
+
+				
+					<div class="col-xs-12 col-md-6">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/UfPtv_RUCEI" frameborder="0" allowfullscreen></iframe>					</div>
+
+				
+					<div class="col-xs-12 col-md-6">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/KbzJ9m3vaTA" frameborder="0" allowfullscreen></iframe>					</div>
+
+				  
+			
+		</div>
+	</div>
+</div>
+<div class="block block_garantia" id="garantia">
+	<div class="container">
+		<div class="title margin_45 center">Гарантія від виробника із печаткою!</div>
+		<div class="box_garantia">
+			<div class="row">
+				<div class="col-xs-12 col-md-3 " style="text-align: center;">
+					<img src="images/LOGO_YL.png" alt class="logo_site">
+					<img src="images/5_year.png" alt class="img_5_years">
+				</div>
+				<div class="col-xs-12 col-md-6" style="padding-left: 0;">
+					Усі говорять про гарантію, а ми її надаємо! <br>
+					У Вас є 2 тижні на те, щоб повернути товар!<br> 
+					Ми впевнені у своїй продукції, яка виготовляється з 2009 року.<br>
+					Термін служби панелей опалення від 20 років.<br>
+					<div class="box_text_gar">
+						<span>ДАЄМО ГАРАНТІЮ 6 РОКІВ!</span>
+						<p>
+							<strong>Ми надаємо: </strong>
+							інструкцію, гарантійний талон та чек з мокрим друком!
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 no_relative">
+					<img src="images/talon.png" alt class="img_gar_talon">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-3 " style="text-align: center;"></div>
+			<div class="col-xs-12 col-md-6" style>
+				<span class="post_text_gar">Ми – офіційні представники заводу виробника!<br>
+				Зроблено в Україні! м. Київ</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="block block_sert">
+	<div class="container">
+		<div class="title margin_45 center">Сертифікати якості</div>
+		<div class="row">
+			
+		</div>
+	</div>
+</div>
+<div class="block block_otziv" id="otziv">
+	<div class="container">
+		<div class="title margin_45 center">почитайте, що про нас говорять люди:</div>
+		<div class="owl-carousel owl-theme owl_slide_otziv">
+
+
+			
+
+							
+					<div class="item item_otziv">
+						<div class="row">
+							<div class="col-xs-12 col-md-2">
+								<img src="images/foto.png">
+							</div>
+							<div class="col-xs-12 col-md-10">
+								<div class="box_otziv">
+									« Діти, чесно кажучи, здивували своїм професіоналізмом. Все дуже сподобалося. Добре прорахували... »
+								</div>
+								<div class="box_author">
+									Лариса (м. Кривий Ріг)								</div>
+							</div>
+						</div>
+					</div>
+
+
+				
+					<div class="item item_otziv">
+						<div class="row">
+							<div class="col-xs-12 col-md-2">
+								<img src="images/kostya_kiev.jpg">
+							</div>
+							<div class="col-xs-12 col-md-10">
+								<div class="box_otziv">
+									« Купив обігрівач. Привезли за 2 дні. Принесли додому велику та важку коробку, а відкривши побачили тоненький гарний обігрівутель. Встановили швидко і за кілька годин у великій кімнаті значно потепліло »
+								</div>
+								<div class="box_author">
+									Костя Шумін (м. Київ)								</div>
+							</div>
+						</div>
+					</div>
+
+
+				
+					<div class="item item_otziv">
+						<div class="row">
+							<div class="col-xs-12 col-md-2">
+								<img src="images/svetlana_lviv.jpg">
+							</div>
+							<div class="col-xs-12 col-md-10">
+								<div class="box_otziv">
+									« До цього ми мали масляний радіатор. електрики накручував безмірно! Спальня маленька і його вистачало «через цур». Вночі дихати нема чим. Купили панель на 350 Вт, прикрутили на стіну та порядок. Спимо спокійно »
+								</div>
+								<div class="box_author">
+									Світлана Ковальова (м. Львів)								</div>
+							</div>
+						</div>
+					</div>
+
+
+				
+					<div class="item item_otziv">
+						<div class="row">
+							<div class="col-xs-12 col-md-2">
+								<img src="images/alexander_mariupol.jpg">
+							</div>
+							<div class="col-xs-12 col-md-10">
+								<div class="box_otziv">
+									« Відмінний обігрівач! Замовляли до офісу. Гріє на ура. І в інтер'єр вписався. Потрібно і вдома поставити »
+								</div>
+								<div class="box_author">
+									Александр Шарапов (м. Маріуполь)								</div>
+							</div>
+						</div>
+					</div>
+
+
+				  
+			
+
+
+		</div>
+	</div>
+</div>
+<div class="block block_haw_work">
+	<div class="container">
+		<div class="title margin_45 center">дізнайтесь як ми працюємо:</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-3">
+				<div class="item_work">
+					<div class="item_work_img">
+						<img src="images/work_1.png">
+					</div>
+					<p>Ви оформляєте заявку на купівлю обігрівача через сайт або у телефонному режимі</p>
+					<img src="images/icon_chevrons-right.png" class="icon_chevrons">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<div class="item_work">
+					<div class="item_work_img">
+						<img src="images/work_2.png">
+					</div>
+					<p>Наш менеджер зв'язується з Вами для уточнення всіх деталей замовлення та доставки</p>
+					<img src="images/icon_chevrons-right.png" class="icon_chevrons">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<div class="item_work">
+					<div class="item_work_img">
+						<img src="images/work_3.png">
+					</div>
+					<p>Ми комплектуємо та відправляємо Ваше замовлення перевізником - Нова Пошта.</p>
+					<img src="images/icon_chevrons-right.png" class="icon_chevrons">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<div class="item_work">
+					<div class="item_work_img">
+						<img src="images/work_4.png">
+					</div>
+					<p>Ви отримуєте замовлення та насолоджуєтеся комфортом та затишком Вашого теплого будинку</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="block block_vopros">
+	<div class="container">
+		<div class="title margin_45">Виникли питання? Задайте їх нашому менеджеру!</div>
+		<div class="box_block_vopros">
+			<div class="row">
+				<div class="col-xs-12 col-md-4">
+					<p>У Вас залишилися незрозумілі моменти щодо обігрівачів, їх характеристик, принципу дії, економічності чи вартості?</p>
+					<br>
+					<p>Зв'яжіться з нашими менеджерами або замовте зворотний дзвінок, щоб отримати безкоштовну консультацію!</p>
+				</div> 
+				<div class="col-xs-12 col-md-3">
+					<ul class="no_list_style">
+													
+								<li>Kyivstar: +38 (068) 390-30-30</li>
+
+							
+								<li>Vodafone: +38 (050) 931-28-88</li>
+
+							
+								<li>Lifecell: +38 (063) 213-91-90</li>
+
+							  
+											</ul>
+					<a href="#pol_consult" class="btn btn_modal btn_call_wt ">отримати консультацію</a>
+				</div> 
+				<div class="col-xs-12 col-md-5 no_relative">
+					<img src="images/women-1.png" class="img_girl">
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
+<div class="block block_maps">
+	<div class="container">
+		<div class="row margin_45">
+			<div class="col-xs-12 col-md-6">
+				<div class="title">Як до нас проїхати?</div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<a href="#proschet" class="btn btn_modal btn_right">записатися на прорахунок до офісу</a>
+			</div>
+		</div>
+		<div class="row maps">
+			<div class="col-xs-12 col-md-6">
+				<p> м. Київ, вул. Новодарницька 27</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.870843224377!2d30.66268731573037!3d50.42487797947188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5200c15fcaf%3A0x3f365c51d4f762b7!2s24!5e0!3m2!1sru!2sua!4v1562853674578!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<div class="row ">
+			<div class="col-xs-12 col-md-6 ">
+				<span class="copy_right">ФОП Гливенко І. С. – Код ЄГРПОУ 3819921687</span>
+			</div>
+			<div class="col-xs-12 col-md-6 ">
+				<a href="#pol_sotr" class="btn btn_modal btn_footer">заявка на співпрацю</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="modal_div" id="pol_consult">
+	<div class="block_form">
+		<div>Отримати<br> <span>безкоштовну консультацію!</span> </div>
+		<form action="https://valenciya.pp.ua/mail.php" method="POST" name="POST">
+			<input type="hidden" name="title_form" value="отримати консультацію">
+			<input type="text" name="name" placeholder="Введіть ім'я">
+			<input type="text" name="phone" required placeholder="Введіть телефон">
+			<input type="submit" name="submit" class="btn" value="отримати консультацію">
+		</form>
+	</div>
+</div>
+
+<div class="modal_div" id="pol_sotr">
+	<div class="block_form">
+		<div>Надіслати<br> <span>заявку на співпрацю</span> </div>
+		<form action="https://valenciya.pp.ua/mail.php" method="POST">
+			<input type="hidden" name="title_form" value="Заявка на співпрацю">
+			<input type="text" name="name" placeholder="Введіть ім'я">
+			<input type="text" name="phone" required placeholder="Введіть телефон">
+			<input type="submit" name="submit" class="btn" value="Надіслати">
+		</form>
+	</div>
+</div>
+<div class="modal_div" id="proschet">
+	<div class="block_form">
+		<div>Записатися <br> <span>безкоштовний прорахунок!</span></div>
+		<form action="https://valenciya.pp.ua/mail.php" method="POST" name="POST">
+			<input type="hidden" name="title_form" value="Запис на прорахунок до офісу">
+			<input type="text" name="name" placeholder="Введіть ім'я">
+			<input type="text" name="phone" required placeholder="Введіть телефон">
+			<input type="submit" name="submit" class="btn" value="Надіслати">
+		</form>
+	</div>
+</div>
+<div class="modal fade feedback-modal" id="by_prod" style="display: none;">
+	<div class="modal-dialog modal_showProduct">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="form_product">
+					<span class="orange">передзвонимо за <br> дві хвилини</span>
+					<p>Заповніть форму і ми зв'яжемося з вами</p>
+					<form name="showProduct" id="productsbotton" class="text-center" action="https://valenciya.pp.ua/mail.php" method="POST" name="POST">
+						<div class="input-group">
+							<input type="hidden" value name="name_prod">
+							<input type="hidden" value name="price_prod">
+							<input type="hidden" value name="id_prod">
+							<input type="text" name="name" placeholder="Введіть ім'я">
+						</div>
+						<div class="input-group">
+							<input type="text" name="phone" required placeholder="Введіть телефон">
+						</div>
+						<input type="submit" class="btn btn-lg btn-warning submit-form btn-send-form" value="Надіслати">
+
+					</form>
+				</div>
+				<div class="img_product"><img src="images/Econom-300.jpg"></div>
+				<div class="opis_product">
+					<h3 class="item-header modal_header" data-id_prod="1">венеція економіка 300</h3>
+					<div class="khar_product product-details_modal">
+						<p><span>Площа обігріву:</span> 7-10 м2 </p>
+						<p><span>Потужність:</span> 300 Вт</p>
+						<p><span>Споживання за добу:</span> 3 кВт</p>
+						<p><span>Напруга:</span> 220-230 В</p>
+						<p><span>Габарити:</span> 500х500х15 мм</p>
+						<p><span>Вага:</span> 7 кг</p>
+						<p><span>Терморегулятор:</span> Немає</p>
+						<p><span>Програматор:</span> Немає</p>
+						<p><span>Короб для конвекції:</span> Немає</p>
+					</div>
+					<div class="product-price price_modal">
+						<span class="old-price"><del>959 грн.</del></span> <span class="new-price">849 грн.</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
